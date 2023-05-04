@@ -46,7 +46,7 @@ contract FunctionModifier {
     }
 
     function decrement(uint i) public noReentrancy {
-        x -= i;
+        x -= 1;
 
         if (i > 1) {
             decrement(i - 1);
